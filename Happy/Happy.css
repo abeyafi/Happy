@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #050505; /* Hitam pekat agar kembang api kontras */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 1;
+}
+
+p#instruction {
+    margin: 0;
+    position: absolute;
+    font: 14px Verdana;
+    color: rgba(255, 255, 255, 0.5);
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    z-index: 2;
+    pointer-events: none; /* Klik akan tembus ke canvas */
+}
